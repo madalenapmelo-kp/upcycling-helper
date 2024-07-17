@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcycling Idea Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Upcycling Idea Board</h1>
+    <div class="container">
+        <div class="column" id="questions-column">
+            <div id="initial-question">
+                <label for="project-type">What kind of project do you have in mind?</label>
+                <select id="project-type" autocomplete="off">
+                    <option disabled selected value>-- Select an option --</option>
+                    <option value="recycle">I want to recycle materials</option>
+                    <option value="create">I want to create something</option>
+                </select>
+            </div>
+
+            <div id="recycle-questions" class="hidden">
+                <label for="materials-to-recycle">What kind of materials do you want to recycle?</label>
+                <select id="materials-to-recycle" autocomplete="off">
+                    <option disabled selected value>-- Select an option --</option>
+                    <option value="towels">Towels</option>
+                    <option value="sheets">Sheets</option>
+                    <option value="clothing">Clothing</option>
+                </select>
+                <input type="text" id="other-materials" class="hidden" placeholder="Please specify other materials">
+
+
+                <label for="recycle-idea">Do you have an idea of what you would like to create?</label>
+                <select id="recycle-idea" autocomplete="off">
+                    <option disabled selected value>-- Select an option --</option>
+                    <option value="utilities">House utilities</option>
+                    <option value="clothing">Clothing items</option>
+                    <option value="decorations">Decorations</option>
+                    <option value="suggestions">I'm just looking for suggestions</option>
+                </select>
+            </div>
+
+            <div id="create-questions" class="hidden">
+                <label for="materials-to-use">What materials will you be using?</label>
+                <select id="materials-to-use" autocomplete="off">
+                    <option disabled selected value>-- Select an option --</option>
+                    <option value="cotton">Cotton & Wool</option>
+                    <option value="linen">Linen</option>
+                    <option value="satin">Satin</option>
+                </select>
+
+                <label for="project-type-create">What kind of project do you want to work on?</label>
+                <select id="project-type-create" autocomplete="off">
+                    <option disabled selected value>-- Select an option --</option>
+                    <option value="crochet">Crochet & Knitting</option>
+                    <option value="sewing">Sewing & Embroidery</option>
+                </select>
+
+                <label for="create-idea">Do you have an idea of what you would like to create?</label>
+                <select id="create-idea" autocomplete="off">
+                    <option disabled selected value>-- Select an option --</option>
+                    <option value="accessories">Accessories</option>
+                    <option value="clothing-items">Clothing items</option>
+                    <option value="household-items">Household items</option>
+                    <option value="suggestions">I'm just looking for suggestions</option>
+                </select>
+            </div>
+
+            <button id="add-idea-button" class="hidden">Add Idea</button>
+        </div>
+
+        <div class="column hidden" id="idea-board">
+            <h2>Idea Board</h2>
+        </div>
+        
+        <div class="column hidden" id="resource-board">
+            <h2>Resources</h2>
+            <!-- Add your resource links or content here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
